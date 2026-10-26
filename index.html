@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=20261026b" />
+  <link rel="stylesheet" href="css/styles.css?v=20261026c" />
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
@@ -39,7 +39,6 @@
 
       <nav class="nav__links" aria-label="Primary">
         <a href="#services" data-i18n="nav.services">Services</a>
-        <a href="#work" data-i18n="nav.work">Work</a>
         <a href="#process" data-i18n="nav.process">Process</a>
         <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
@@ -59,7 +58,6 @@
 
     <div class="mobile-menu" id="mobile-menu" hidden>
       <a href="#services" data-i18n="nav.services">Services</a>
-      <a href="#work" data-i18n="nav.work">Work</a>
       <a href="#process" data-i18n="nav.process">Process</a>
       <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
@@ -89,8 +87,8 @@
         <p class="hero__sub" data-i18n="hero.sub">No templates, no copy-paste. We design and build one-of-a-kind websites for ambitious businesses — Caribbean creativity, world-class craft.</p>
         <div class="hero__ctas">
           <a href="#contact" class="btn btn--light" data-i18n="hero.cta1">Start your project</a>
-          <a href="#work" class="btn btn--ghost">
-            <span data-i18n="hero.cta2">See our work</span>
+          <a href="#pricing" class="btn btn--ghost">
+            <span data-i18n="hero.cta2">See pricing</span>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
           </a>
         </div>
@@ -157,62 +155,6 @@
       </div>
     </section>
 
-    <!-- ============ WORK ============ -->
-    <section class="section" id="work" aria-labelledby="work-title">
-      <div class="container">
-        <header class="section__head section__head--row reveal">
-          <div>
-            <p class="eyebrow" data-i18n="work.eyebrow">Selected work</p>
-            <h2 id="work-title" data-i18n="work.title">Work that looks like no one else's</h2>
-          </div>
-          <a href="#contact" class="btn btn--ghost">
-            <span data-i18n="work.cta">Start yours</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
-          </a>
-        </header>
-
-        <!-- Placeholder projects: swap in real client work, screenshots and links. -->
-        <div class="work">
-          <article class="project reveal" style="--i:0; --c1:#2EE6D6; --c2:#1EA7FF">
-            <div class="project__visual" aria-hidden="true">
-              <div class="mock"><div class="mock__bar"><i></i><i></i><i></i></div><div class="mock__body"><b class="mock__hero"></b><b></b><b></b><b></b></div></div>
-            </div>
-            <div class="project__meta">
-              <h3>Playa Rincón Villas</h3>
-              <p data-i18n="work.p1">Hospitality · Booking website</p>
-            </div>
-          </article>
-          <article class="project reveal" style="--i:1; --c1:#FF6B4A; --c2:#FFB86B">
-            <div class="project__visual" aria-hidden="true">
-              <div class="mock"><div class="mock__bar"><i></i><i></i><i></i></div><div class="mock__body mock__body--shop"><b class="mock__hero"></b><b></b><b></b><b></b></div></div>
-            </div>
-            <div class="project__meta">
-              <h3>Café del Cibao</h3>
-              <p data-i18n="work.p2">Food &amp; drink · Online store</p>
-            </div>
-          </article>
-          <article class="project reveal" style="--i:2; --c1:#8B7CFF; --c2:#2EE6D6">
-            <div class="project__visual" aria-hidden="true">
-              <div class="mock"><div class="mock__bar"><i></i><i></i><i></i></div><div class="mock__body mock__body--split"><b class="mock__hero"></b><b></b><b></b><b></b></div></div>
-            </div>
-            <div class="project__meta">
-              <h3>Clínica Malecón</h3>
-              <p data-i18n="work.p3">Healthcare · Website &amp; appointments</p>
-            </div>
-          </article>
-          <article class="project reveal" style="--i:3; --c1:#1EA7FF; --c2:#FF6B4A">
-            <div class="project__visual" aria-hidden="true">
-              <div class="mock"><div class="mock__bar"><i></i><i></i><i></i></div><div class="mock__body"><b class="mock__hero"></b><b></b><b></b><b></b></div></div>
-            </div>
-            <div class="project__meta">
-              <h3>Zona Colonial Tours</h3>
-              <p data-i18n="work.p4">Tourism · Branding &amp; website</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- ============ PROCESS ============ -->
     <section class="section" id="process" aria-labelledby="process-title">
       <div class="container">
@@ -257,7 +199,7 @@
         <header class="section__head reveal">
           <p class="eyebrow" data-i18n="pricing.eyebrow">Pricing</p>
           <h2 id="pricing-title" data-i18n="pricing.title">Simple packages, no surprises</h2>
-          <p class="section__lead" data-i18n="pricing.lead">Websites start at just $400. Prices in USD. Pay by card or bank transfer (DOP accepted). Every package includes hosting setup and a mobile-first design.</p>
+          <p class="section__lead" data-i18n="pricing.lead">New websites start at just $400. Prices in USD. Pay by card or bank transfer (DOP accepted). Every package includes hosting setup and a mobile-first design.</p>
         </header>
 
         <div class="pricing">
@@ -271,7 +213,7 @@
               <li data-i18n="pricing.p1.f3">Basic SEO setup</li>
               <li data-i18n="pricing.p1.f4">Delivered in 2 weeks</li>
             </ul>
-            <a href="#contact" class="btn btn--ghost btn--block" data-plan="starter" data-i18n="pricing.cta">Choose plan</a>
+            <a href="#contact" class="btn btn--ghost btn--block" data-plan="starter" data-i18n="pricing.cta">Get a quote</a>
           </article>
 
           <article class="card plan plan--featured reveal" style="--i:1">
@@ -286,7 +228,7 @@
               <li data-i18n="pricing.p2.f4">Full SEO + Google Business</li>
               <li data-i18n="pricing.p2.f5">30 days of free support</li>
             </ul>
-            <a href="#contact" class="btn btn--primary btn--block" data-plan="growth" data-i18n="pricing.cta">Choose plan</a>
+            <a href="#contact" class="btn btn--primary btn--block" data-plan="growth" data-i18n="pricing.cta">Get a quote</a>
           </article>
 
           <article class="card plan reveal" style="--i:2">
@@ -300,40 +242,39 @@
               <li data-i18n="pricing.p3.f4">Analytics &amp; conversion tracking</li>
               <li data-i18n="pricing.p3.f5">90 days of priority support</li>
             </ul>
-            <a href="#contact" class="btn btn--ghost btn--block" data-plan="pro" data-i18n="pricing.cta">Choose plan</a>
+            <a href="#contact" class="btn btn--ghost btn--block" data-plan="pro" data-i18n="pricing.cta">Get a quote</a>
           </article>
         </div>
         <p class="pricing__note reveal" data-i18n="pricing.note">Need ongoing help? Care plans start at $49/month.<br />We work remotely with clients worldwide, on US Eastern time.</p>
-        <p class="pricing__note pricing__note--link reveal"><a href="#pay" data-i18n="pricing.payLink">Already have a quote? Make a payment →</a></p>
       </div>
     </section>
 
-    <!-- ============ TESTIMONIALS ============ -->
-    <section class="section" id="testimonials" aria-labelledby="testimonials-title">
+    <!-- ============ PAYMENTS ============ -->
+    <!-- Buy now buttons open checkout.html, which uses Stripe's embedded payment form. Plans and prices live in api/create-checkout-session.php. -->
+    <section class="section" id="pay" aria-labelledby="pay-title">
       <div class="container">
         <header class="section__head reveal">
-          <p class="eyebrow" data-i18n="testi.eyebrow">Testimonials</p>
-          <h2 id="testimonials-title" data-i18n="testi.title">Clients who chose different</h2>
+          <p class="eyebrow" data-i18n="pay.eyebrow">Buy online</p>
+          <h2 id="pay-title" data-i18n="pay.title">Already have a website? Start today</h2>
+          <p class="section__lead" data-i18n="pay.lead">Upgrade your existing site with one of these services, paid securely online by card through Stripe. Need a brand-new website? Pick a package above and we'll send you a quote.</p>
         </header>
 
-        <!-- Placeholder testimonials: replace with real client quotes. -->
-        <div class="testimonials">
-          <figure class="card quote reveal" style="--i:0">
-            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote data-i18n="testi.q1">"Our bookings doubled in the first three months. The new site finally looks like the experience we offer."</blockquote>
-            <figcaption><span class="avatar" aria-hidden="true">MR</span><span><strong>María Rodríguez</strong><small>Playa Rincón Villas</small></span></figcaption>
-          </figure>
-          <figure class="card quote reveal" style="--i:1">
-            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote data-i18n="testi.q2">"Fast, professional and always on WhatsApp when we needed them. Selling online was easier than we thought."</blockquote>
-            <figcaption><span class="avatar" aria-hidden="true">JP</span><span><strong>José Peña</strong><small>Café del Cibao</small></span></figcaption>
-          </figure>
-          <figure class="card quote reveal" style="--i:2">
-            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote data-i18n="testi.q3">"They understood our patients and built something clear, modern and fully bilingual."</blockquote>
-            <figcaption><span class="avatar" aria-hidden="true">AF</span><span><strong>Dra. Ana Fernández</strong><small>Clínica Malecón</small></span></figcaption>
-          </figure>
+        <div class="pay">
+          <article class="card pay__card reveal" style="--i:0">
+            <h3 data-i18n="pay.p1.t">Website Makeover</h3>
+            <p class="pay__desc" data-i18n="pay.p1.d">A one-time refresh of your current website: modern look, mobile-friendly layout and faster loading.</p>
+            <p class="plan__price">$150</p>
+            <a href="checkout.html?plan=makeover" class="btn btn--primary btn--block" data-i18n="pay.buy">Buy now</a>
+          </article>
+
+          <article class="card pay__card reveal" style="--i:1">
+            <h3 data-i18n="pay.p2.t">Website Rebranding</h3>
+            <p class="pay__desc" data-i18n="pay.p2.d">Ongoing rebranding and design updates for your website, billed monthly. Cancel anytime.</p>
+            <p class="plan__price">$200<span class="pay__per" data-i18n="pay.per">/month</span></p>
+            <a href="checkout.html?plan=rebranding" class="btn btn--primary btn--block" data-i18n="pay.subscribe">Subscribe</a>
+          </article>
         </div>
+        <p class="pay__note" data-i18n="pay.note">Prefer a bank transfer (USD or DOP)? Contact us and we'll send the details.</p>
       </div>
     </section>
 
@@ -367,35 +308,6 @@
             <p data-i18n="faq.a5">We set everything up for you. Hosting and domain fees are billed by the provider, usually $10–30/month.</p>
           </details>
         </div>
-      </div>
-    </section>
-
-    <!-- ============ PAYMENTS ============ -->
-    <!-- Buy now buttons open checkout.html, which uses Stripe's embedded payment form. Plans and prices live in api/create-checkout-session.php. -->
-    <section class="section" id="pay" aria-labelledby="pay-title">
-      <div class="container">
-        <header class="section__head reveal">
-          <p class="eyebrow" data-i18n="pay.eyebrow">Payments</p>
-          <h2 id="pay-title" data-i18n="pay.title">Pay securely online</h2>
-          <p class="section__lead" data-i18n="pay.lead">Pay with any credit or debit card. Checkout is handled securely by Stripe.</p>
-        </header>
-
-        <div class="pay">
-          <article class="card pay__card reveal" style="--i:0">
-            <h3 data-i18n="pay.p1.t">Website Makeover</h3>
-            <p class="pay__desc" data-i18n="pay.p1.d">Refresh your current website with a modern, mobile-friendly design.</p>
-            <p class="plan__price">$150</p>
-            <a href="checkout.html?plan=makeover" class="btn btn--primary btn--block" data-i18n="pay.buy">Buy now</a>
-          </article>
-
-          <article class="card pay__card reveal" style="--i:1">
-            <h3 data-i18n="pay.p2.t">Website Rebranding</h3>
-            <p class="pay__desc" data-i18n="pay.p2.d">Ongoing rebranding and design updates for your website, billed monthly. Cancel anytime.</p>
-            <p class="plan__price">$200<span class="pay__per" data-i18n="pay.per">/month</span></p>
-            <a href="checkout.html?plan=rebranding" class="btn btn--primary btn--block" data-i18n="pay.subscribe">Subscribe</a>
-          </article>
-        </div>
-        <p class="pay__note" data-i18n="pay.note">Prefer a bank transfer (USD or DOP)? Contact us and we'll send the details.</p>
       </div>
     </section>
 
@@ -495,7 +407,6 @@
       </a>
       <nav class="footer__links" aria-label="Footer">
         <a href="#services" data-i18n="nav.services">Services</a>
-        <a href="#work" data-i18n="nav.work">Work</a>
         <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
         <a href="#faq">FAQ</a>
         <a href="#pay" data-i18n="nav.pay">Pay</a>
@@ -512,8 +423,8 @@
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js" defer></script>
-  <script src="js/i18n.js?v=20261026b" defer></script>
-  <script src="js/main.js?v=20261026b" defer></script>
-  <script src="js/hero3d.js?v=20261026b" defer></script>
+  <script src="js/i18n.js?v=20261026c" defer></script>
+  <script src="js/main.js?v=20261026c" defer></script>
+  <script src="js/hero3d.js?v=20261026c" defer></script>
 </body>
 </html>

@@ -87,7 +87,7 @@
       });
     });
   }, { rootMargin: "-45% 0px -50% 0px" });
-  ["services", "work", "process", "pricing", "contact"].forEach(function (id) {
+  ["services", "process", "pricing", "contact"].forEach(function (id) {
     var s = document.getElementById(id);
     if (s) sectionObserver.observe(s);
   });
