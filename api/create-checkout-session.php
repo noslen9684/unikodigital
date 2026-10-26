@@ -30,8 +30,8 @@ if (!$secretKey || !$publishableKey) {
 
 // Each plan maps to a Stripe Price and a mode ("payment" = one-time, "subscription" = recurring).
 // Prices are fixed here on the server so visitors can't change the amount.
-// Test and live prices have different IDs; the right set is picked from the secret key.
-$isLive = strpos($secretKey, 'sk_live_') === 0;
+// Test and live prices have different IDs; the right set is picked from the secret key (sk_/rk_ live or test).
+$isLive = strpos($secretKey, '_live_') !== false; // sk_live_ or restricted rk_live_ keys
 $plans = [
     'makeover' => [ // website makeover, $150 one-time
         'price' => $isLive ? 'price_1UUgDzCq5Nkv0OY1IWUC2KiI' : 'price_1UUfJ1CxJrrDe7qiUFJIgI0F',

@@ -4,7 +4,7 @@ This is the single source of truth for what's left before Stripe payments work o
 
 ## Values to Replace
 
-All Price IDs are filled in. The endpoint picks **live** prices when the secret key starts with `sk_live_`, and **test** prices otherwise, so switching keys in `stripe-config.php` is all that's needed.
+All Price IDs are filled in. The endpoint picks **live** prices when the secret key is a live key (`sk_live_…` or restricted `rk_live_…`), and **test** prices otherwise, so switching keys in `stripe-config.php` is all that's needed.
 
 **Files containing these values:**
 - [api/create-checkout-session.php](api/create-checkout-session.php) (the `$plans` list)
