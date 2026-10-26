@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UNIKO Digital — Different by design. Web Design Studio, Dominican Republic</title>
+  <meta name="description" content="UNIKO Digital is a Dominican web design studio building fast, beautiful websites for ambitious brands — from Santo Domingo to everywhere." />
+  <meta name="theme-color" content="#04060a" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="nav__inner container">
+      <a href="#top" class="logo" aria-label="UNIKO Digital home">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <defs>
+            <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2EE6D6" />
+              <stop offset="1" stop-color="#1EA7FF" />
+            </linearGradient>
+          </defs>
+          <circle cx="16" cy="16" r="13" fill="none" stroke="url(#lg)" stroke-width="3.5" />
+          <path d="M11.5 10v6.5a4.5 4.5 0 0 0 9 0V10" fill="none" stroke="#FF6B4A" stroke-width="3" stroke-linecap="round" />
+        </svg>
+        <span class="logo__text"><b>UNIKO</b><small>DIGITAL</small></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <a href="#process" data-i18n="nav.process">Process</a>
+        <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" class="lang__btn" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang__btn" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+        <a href="#contact" class="btn btn--primary btn--sm nav__cta" data-i18n="nav.cta">Book a call</a>
+        <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" data-i18n-aria="nav.menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#work" data-i18n="nav.work">Work</a>
+      <a href="#process" data-i18n="nav.process">Process</a>
+      <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <a href="#contact" class="btn btn--primary" data-i18n="nav.cta">Book a call</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero__fallback" aria-hidden="true"></div>
+      <div class="hero__shade" aria-hidden="true"></div>
+
+      <div class="hero__content container">
+        <p class="badge">
+          <svg class="flag" viewBox="0 0 30 20" aria-hidden="true">
+            <rect width="30" height="20" fill="#fff" />
+            <rect width="13" height="8" fill="#002D62" />
+            <rect x="17" width="13" height="8" fill="#CE1126" />
+            <rect y="12" width="13" height="8" fill="#CE1126" />
+            <rect x="17" y="12" width="13" height="8" fill="#002D62" />
+          </svg>
+          <span data-i18n="hero.badge">Web design studio · Santo Domingo, DR</span>
+        </p>
+        <h1 id="hero-title" class="hero__title" data-i18n="hero.title">Different by Design.</h1>
+        <p class="hero__sub" data-i18n="hero.sub">No templates, no copy-paste. We design and build one-of-a-kind websites for ambitious businesses — Caribbean creativity, world-class craft.</p>
+        <div class="hero__ctas">
+          <a href="#contact" class="btn btn--light" data-i18n="hero.cta1">Start your project</a>
+          <a href="#work" class="btn btn--ghost">
+            <span data-i18n="hero.cta2">See our work</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+        </div>
+      </div>
+
+      <a href="#services" class="hero__scroll" aria-label="Scroll to services" data-i18n-aria="hero.scroll">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ STACK MARQUEE ============ -->
+    <section class="marquee" aria-label="Tools we build with" data-i18n-aria="marquee.label">
+      <div class="marquee__track">
+        <ul>
+          <li>Figma</li><li>Webflow</li><li>Shopify</li><li>WordPress</li><li>Next.js</li><li>Framer</li><li>Wix Studio</li><li>Google Analytics</li>
+        </ul>
+        <ul aria-hidden="true">
+          <li>Figma</li><li>Webflow</li><li>Shopify</li><li>WordPress</li><li>Next.js</li><li>Framer</li><li>Wix Studio</li><li>Google Analytics</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow" data-i18n="services.eyebrow">Services</p>
+          <h2 id="services-title" data-i18n="services.title">Everything you need to stand out online</h2>
+          <p class="section__lead" data-i18n="services.lead">From the first sketch to launch day and beyond, one team handles your whole digital presence.</p>
+        </header>
+
+        <div class="services">
+          <article class="card service reveal" style="--i:0">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18M9 21V9" /></svg></div>
+            <h3 data-i18n="services.s1.t">Web Design</h3>
+            <p data-i18n="services.s1.d">Custom, conversion-focused designs that make your brand look as good as it really is.</p>
+          </article>
+          <article class="card service reveal" style="--i:1">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6" /></svg></div>
+            <h3 data-i18n="services.s2.t">Web Development</h3>
+            <p data-i18n="services.s2.d">Fast, responsive sites built on modern platforms you can actually update yourself.</p>
+          </article>
+          <article class="card service reveal" style="--i:2">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" /><path d="M3 6h18M16 10a4 4 0 0 1-8 0" /></svg></div>
+            <h3 data-i18n="services.s3.t">E-commerce</h3>
+            <p data-i18n="services.s3.d">Online stores with local and international payments, ready to sell from day one.</p>
+          </article>
+          <article class="card service reveal" style="--i:3">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 19 7-7 3 3-7 7-3-3z" /><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5zM2 2l7.586 7.586" /><circle cx="11" cy="11" r="2" /></svg></div>
+            <h3 data-i18n="services.s4.t">Branding</h3>
+            <p data-i18n="services.s4.d">Logos, color palettes and visual identities that feel unmistakably yours.</p>
+          </article>
+          <article class="card service reveal" style="--i:4">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m22 7-8.5 8.5-5-5L2 17" /><path d="M16 7h6v6" /></svg></div>
+            <h3 data-i18n="services.s5.t">SEO &amp; Performance</h3>
+            <p data-i18n="services.s5.d">Technical SEO, speed optimization and Google Business setup so customers find you.</p>
+          </article>
+          <article class="card service reveal" style="--i:5">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg></div>
+            <h3 data-i18n="services.s6.t">Care &amp; Maintenance</h3>
+            <p data-i18n="services.s6.d">Updates, backups, security and content changes — handled every month.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section__head section__head--row reveal">
+          <div>
+            <p class="eyebrow" data-i18n="work.eyebrow">Selected work</p>
+            <h2 id="work-title" data-i18n="work.title">Work that looks like no one else's</h2>
+          </div>
+          <a href="#contact" class="btn btn--ghost">
+            <span data-i18n="work.cta">Start yours</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+        </header>
+
+        <!-- Placeholder projects: swap in real client work, screenshots and links. -->
+        <div class="work">
+          <article class="project reveal" style="--i:0; --c1:#2EE6D6; --c2:#1EA7FF">
+            <div class="project__visual" aria-hidden="true">
+              <div class="mock"><div class="mock__bar"><i></i><i></i><i></i></div><div class="mock__body"><b class="mock__hero"></b><b></b><b></b><b></b></div></div>
+            </div>
+            <div class="project__meta">
+              <h3>Playa Rincón Villas</h3>
+              <p data-i18n="work.p1">Hospitality · Booking website</p>
+            </div>
+          </article>
+          <article class="project reveal" style="--i:1; --c1:#FF6B4A; --c2:#FFB86B">
+            <div class="project__visual" aria-hidden="true">
+              <div class="mock"><div class="mock__bar"><i></i><i></i><i></i></div><div class="mock__body mock__body--shop"><b class="mock__hero"></b><b></b><b></b><b></b></div></div>
+            </div>
+            <div class="project__meta">
+              <h3>Café del Cibao</h3>
+              <p data-i18n="work.p2">Food &amp; drink · Online store</p>
+            </div>
+          </article>
+          <article class="project reveal" style="--i:2; --c1:#8B7CFF; --c2:#2EE6D6">
+            <div class="project__visual" aria-hidden="true">
+              <div class="mock"><div class="mock__bar"><i></i><i></i><i></i></div><div class="mock__body mock__body--split"><b class="mock__hero"></b><b></b><b></b><b></b></div></div>
+            </div>
+            <div class="project__meta">
+              <h3>Clínica Malecón</h3>
+              <p data-i18n="work.p3">Healthcare · Website &amp; appointments</p>
+            </div>
+          </article>
+          <article class="project reveal" style="--i:3; --c1:#1EA7FF; --c2:#FF6B4A">
+            <div class="project__visual" aria-hidden="true">
+              <div class="mock"><div class="mock__bar"><i></i><i></i><i></i></div><div class="mock__body"><b class="mock__hero"></b><b></b><b></b><b></b></div></div>
+            </div>
+            <div class="project__meta">
+              <h3>Zona Colonial Tours</h3>
+              <p data-i18n="work.p4">Tourism · Branding &amp; website</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow" data-i18n="process.eyebrow">Process</p>
+          <h2 id="process-title" data-i18n="process.title">From idea to one-of-a-kind in four steps</h2>
+          <p class="section__lead" data-i18n="process.lead">A clear, collaborative process — you always know what's happening and what's next.</p>
+        </header>
+
+        <ol class="process reveal">
+          <li class="step">
+            <span class="step__num">01</span>
+            <h3 data-i18n="process.s1.t">Discover</h3>
+            <p data-i18n="process.s1.d">We learn your business, your customers and your goals in a free strategy call.</p>
+            <span class="step__time" data-i18n="process.s1.w">Week 1</span>
+          </li>
+          <li class="step">
+            <span class="step__num">02</span>
+            <h3 data-i18n="process.s2.t">Design</h3>
+            <p data-i18n="process.s2.d">Wireframes and polished mockups you review and refine with us.</p>
+            <span class="step__time" data-i18n="process.s2.w">Weeks 2–3</span>
+          </li>
+          <li class="step">
+            <span class="step__num">03</span>
+            <h3 data-i18n="process.s3.t">Build</h3>
+            <p data-i18n="process.s3.d">We develop, test on every device and optimize for speed and SEO.</p>
+            <span class="step__time" data-i18n="process.s3.w">Weeks 3–5</span>
+          </li>
+          <li class="step">
+            <span class="step__num">04</span>
+            <h3 data-i18n="process.s4.t">Launch</h3>
+            <p data-i18n="process.s4.d">Your site goes live, and we train your team and keep supporting you.</p>
+            <span class="step__time" data-i18n="process.s4.w">Week 6</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="section" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow" data-i18n="pricing.eyebrow">Pricing</p>
+          <h2 id="pricing-title" data-i18n="pricing.title">Simple packages, no surprises</h2>
+          <p class="section__lead" data-i18n="pricing.lead">Prices in USD. Payments in DOP available. Every package includes hosting setup and a mobile-first design.</p>
+        </header>
+
+        <!-- Placeholder prices: adjust to your real rates. -->
+        <div class="pricing">
+          <article class="card plan reveal" style="--i:0">
+            <h3 data-i18n="pricing.p1.t">Starter</h3>
+            <p class="plan__desc" data-i18n="pricing.p1.d">A sharp one-page site to get you online fast.</p>
+            <p class="plan__price"><span class="plan__from" data-i18n="pricing.from">From</span> $750</p>
+            <ul class="plan__list">
+              <li data-i18n="pricing.p1.f1">1-page landing site</li>
+              <li data-i18n="pricing.p1.f2">Contact form &amp; WhatsApp button</li>
+              <li data-i18n="pricing.p1.f3">Basic SEO setup</li>
+              <li data-i18n="pricing.p1.f4">Delivered in 2 weeks</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost btn--block" data-plan="starter" data-i18n="pricing.cta">Choose plan</a>
+          </article>
+
+          <article class="card plan plan--featured reveal" style="--i:1">
+            <p class="plan__tag" data-i18n="pricing.popular">Most popular</p>
+            <h3 data-i18n="pricing.p2.t">Growth</h3>
+            <p class="plan__desc" data-i18n="pricing.p2.d">A complete business website built to win customers.</p>
+            <p class="plan__price"><span class="plan__from" data-i18n="pricing.from">From</span> $1,800</p>
+            <ul class="plan__list">
+              <li data-i18n="pricing.p2.f1">Up to 6 custom pages</li>
+              <li data-i18n="pricing.p2.f2">Bilingual EN / ES</li>
+              <li data-i18n="pricing.p2.f3">Blog &amp; easy content editing</li>
+              <li data-i18n="pricing.p2.f4">Full SEO + Google Business</li>
+              <li data-i18n="pricing.p2.f5">30 days of free support</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary btn--block" data-plan="growth" data-i18n="pricing.cta">Choose plan</a>
+          </article>
+
+          <article class="card plan reveal" style="--i:2">
+            <h3 data-i18n="pricing.p3.t">Pro</h3>
+            <p class="plan__desc" data-i18n="pricing.p3.d">E-commerce and custom builds for brands ready to scale.</p>
+            <p class="plan__price"><span class="plan__from" data-i18n="pricing.from">From</span> $3,500</p>
+            <ul class="plan__list">
+              <li data-i18n="pricing.p3.f1">Online store or custom features</li>
+              <li data-i18n="pricing.p3.f2">Branding &amp; logo package</li>
+              <li data-i18n="pricing.p3.f3">Payment gateway integration</li>
+              <li data-i18n="pricing.p3.f4">Analytics &amp; conversion tracking</li>
+              <li data-i18n="pricing.p3.f5">90 days of priority support</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost btn--block" data-plan="pro" data-i18n="pricing.cta">Choose plan</a>
+          </article>
+        </div>
+        <p class="pricing__note reveal" data-i18n="pricing.note">Need ongoing help? Care plans start at $90/month.</p>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow" data-i18n="testi.eyebrow">Testimonials</p>
+          <h2 id="testimonials-title" data-i18n="testi.title">Clients who chose different</h2>
+        </header>
+
+        <!-- Placeholder testimonials: replace with real client quotes. -->
+        <div class="testimonials">
+          <figure class="card quote reveal" style="--i:0">
+            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote data-i18n="testi.q1">"Our bookings doubled in the first three months. The new site finally looks like the experience we offer."</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">MR</span><span><strong>María Rodríguez</strong><small>Playa Rincón Villas</small></span></figcaption>
+          </figure>
+          <figure class="card quote reveal" style="--i:1">
+            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote data-i18n="testi.q2">"Fast, professional and always on WhatsApp when we needed them. Selling online was easier than we thought."</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">JP</span><span><strong>José Peña</strong><small>Café del Cibao</small></span></figcaption>
+          </figure>
+          <figure class="card quote reveal" style="--i:2">
+            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote data-i18n="testi.q3">"They understood our patients and built something clear, modern and fully bilingual."</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">AF</span><span><strong>Dra. Ana Fernández</strong><small>Clínica Malecón</small></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container container--narrow">
+        <header class="section__head reveal">
+          <p class="eyebrow" data-i18n="faq.eyebrow">FAQ</p>
+          <h2 id="faq-title" data-i18n="faq.title">Questions, answered</h2>
+        </header>
+
+        <div class="faq reveal">
+          <details>
+            <summary data-i18n="faq.q1">How long does a website take?</summary>
+            <p data-i18n="faq.a1">Most sites launch in 2–6 weeks depending on size. You'll get a clear timeline before we start.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q2">Do you work with clients outside the Dominican Republic?</summary>
+            <p data-i18n="faq.a2">Yes! We work remotely with businesses in the US, Puerto Rico, Europe and across Latin America — in English or Spanish.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q3">Can I update the website myself?</summary>
+            <p data-i18n="faq.a3">Absolutely. We build on easy-to-edit platforms and give you a short training session at launch.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q4">How do payments work?</summary>
+            <p data-i18n="faq.a4">Usually 50% to start and 50% at launch. We accept bank transfer (USD or DOP), card and PayPal.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q5">Are hosting and domain included?</summary>
+            <p data-i18n="faq.a5">We set everything up for you. Hosting and domain fees are billed by the provider, usually $10–30/month.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="container contact__grid">
+        <div class="contact__intro reveal">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h2 id="contact-title" data-i18n="contact.title">Ready to be different?</h2>
+          <p class="section__lead" data-i18n="contact.lead">Tell us about your project and we'll reply within one business day with ideas and a quote.</p>
+
+          <ul class="contact__list">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>
+              <span>Nelson Guzman, <span data-i18n="contact.ceo">CEO</span></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z" /></svg>
+              <a href="https://wa.me/18299849684" target="_blank" rel="noopener">WhatsApp: +1 (829) 984-9684</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+              <a href="tel:+18299849684">+1 (829) 984-9684</a>
+            </li>
+            <!-- Placeholder email: replace with your real address (also CONTACT_EMAIL in js/main.js). -->
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 7-10 6L2 7" /></svg>
+              <a href="mailto:hola@unikodigital.com">hola@unikodigital.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" /><circle cx="12" cy="10" r="3" /></svg>
+              <span data-i18n="contact.location">Santo Domingo, Dominican Republic</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="card form reveal" id="contact-form" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="f-name"><span data-i18n="form.name">Name</span> <span class="req" aria-hidden="true">*</span></label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err" />
+              <p class="field__error" id="f-name-err" data-i18n="form.err.name" hidden>Please enter your name.</p>
+            </div>
+            <div class="field">
+              <label for="f-email"><span data-i18n="form.email">Email</span> <span class="req" aria-hidden="true">*</span></label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="f-email-err" />
+              <p class="field__error" id="f-email-err" data-i18n="form.err.email" hidden>Please enter a valid email, like name@company.com.</p>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="f-phone" data-i18n="form.phone">WhatsApp / Phone</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" />
+            </div>
+            <div class="field">
+              <label for="f-type" data-i18n="form.type">Project type</label>
+              <select id="f-type" name="type">
+                <option value="New website" data-i18n="form.t1">New website</option>
+                <option value="Website redesign" data-i18n="form.t2">Website redesign</option>
+                <option value="Online store" data-i18n="form.t3">Online store</option>
+                <option value="Branding" data-i18n="form.t4">Branding</option>
+                <option value="Other" data-i18n="form.t5">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-budget" data-i18n="form.budget">Budget</label>
+            <select id="f-budget" name="budget">
+              <option value="Under $1,000" data-i18n="form.b1">Under $1,000</option>
+              <option value="$1,000 – $3,000" selected>$1,000 – $3,000</option>
+              <option value="$3,000 – $6,000">$3,000 – $6,000</option>
+              <option value="$6,000+">$6,000+</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-msg"><span data-i18n="form.msg">Tell us about your project</span> <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="f-msg" name="message" rows="4" required aria-describedby="f-msg-help f-msg-err"></textarea>
+            <p class="field__help" id="f-msg-help" data-i18n="form.msgHelp">What does your business do, and what should the website achieve?</p>
+            <p class="field__error" id="f-msg-err" data-i18n="form.err.msg" hidden>Please add a short description (at least 10 characters).</p>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block" data-i18n="form.submit">Send message</button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo" aria-label="UNIKO Digital home">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="13" fill="none" stroke="url(#lg)" stroke-width="3.5" />
+          <path d="M11.5 10v6.5a4.5 4.5 0 0 0 9 0V10" fill="none" stroke="#FF6B4A" stroke-width="3" stroke-linecap="round" />
+        </svg>
+        <span class="logo__text"><b>UNIKO</b><small>DIGITAL</small></span>
+      </a>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <p class="footer__copy">© <span id="year">2026</span> UNIKO Digital. <span data-i18n="footer.tagline">Different by design.</span> <span data-i18n="footer.made">Made with care in the Dominican Republic.</span></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/hero3d.js" defer></script>
+</body>
+</html>
