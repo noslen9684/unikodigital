@@ -59,7 +59,7 @@ window.UNIKO_ES = {
 
   "pricing.eyebrow": "Precios",
   "pricing.title": "Paquetes simples, sin sorpresas",
-  "pricing.lead": "Sitios web desde solo $400. Precios en USD. Paga con PayPal, tarjeta o transferencia (aceptamos DOP). Todos los paquetes incluyen configuración de hosting y diseño mobile-first.",
+  "pricing.lead": "Sitios web desde solo $400. Precios en USD. Paga con tarjeta o transferencia (aceptamos DOP). Todos los paquetes incluyen configuración de hosting y diseño mobile-first.",
   "pricing.from": "Desde",
   "pricing.popular": "Más popular",
   "pricing.cta": "Elegir plan",
@@ -115,7 +115,7 @@ window.UNIKO_ES = {
   "faq.q3": "¿Puedo actualizar el sitio yo mismo?",
   "faq.a3": "Claro que sí. Usamos plataformas fáciles de editar y te damos una breve capacitación al lanzar.",
   "faq.q4": "¿Cómo funcionan los pagos?",
-  "faq.a4": "Normalmente 50% al iniciar y 50% al lanzar. Aceptamos transferencia (USD o DOP), tarjeta y PayPal.",
+  "faq.a4": "Normalmente 50% al iniciar y 50% al lanzar. Aceptamos pagos con tarjeta y transferencia (USD o DOP).",
   "faq.q5": "¿Incluyen hosting y dominio?",
   "faq.a5": "Nosotros lo configuramos todo. El hosting y el dominio los cobra el proveedor, usualmente $10–30/mes.",
 
