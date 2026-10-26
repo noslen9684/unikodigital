@@ -121,7 +121,7 @@
      form at a service like Formspree and replace the mailto step below. */
   var form = document.getElementById("contact-form");
   var statusEl = form.querySelector(".form__status");
-  var CONTACT_EMAIL = "hola@unikodigital.com";
+  var CONTACT_EMAIL = "nelson@unikodigital.com";
 
   var rules = {
     name: function (v) { return v.trim().length > 0; },

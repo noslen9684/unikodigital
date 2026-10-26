@@ -59,7 +59,7 @@ window.UNIKO_ES = {
 
   "pricing.eyebrow": "Precios",
   "pricing.title": "Paquetes simples, sin sorpresas",
-  "pricing.lead": "Precios en USD. Aceptamos pagos en DOP. Todos los paquetes incluyen configuración de hosting y diseño mobile-first.",
+  "pricing.lead": "Sitios web desde solo $400. Precios en USD, aceptamos pagos en DOP. Todos los paquetes incluyen configuración de hosting y diseño mobile-first.",
   "pricing.from": "Desde",
   "pricing.popular": "Más popular",
   "pricing.cta": "Elegir plan",
