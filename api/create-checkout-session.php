@@ -30,13 +30,21 @@ if (!$secretKey || !$publishableKey) {
 
 // Each plan maps to a Stripe Price and a mode ("payment" = one-time, "subscription" = recurring).
 // Prices are fixed here on the server so visitors can't change the amount.
+// Test and live prices have different IDs; the right set is picked from the secret key.
+$isLive = strpos($secretKey, 'sk_live_') === 0;
 $plans = [
-    'makeover' => ['price' => 'price_1UUfJ1CxJrrDe7qiUFJIgI0F', 'mode' => 'payment'],      // website makeover, $150 one-time
-    'rebranding' => ['price' => 'price_1UUfILCxJrrDe7qiDyT0UTE7', 'mode' => 'subscription'], // Website Rebranding, $200/month
+    'makeover' => [ // website makeover, $150 one-time
+        'price' => $isLive ? 'price_1UUgDzCq5Nkv0OY1IWUC2KiI' : 'price_1UUfJ1CxJrrDe7qiUFJIgI0F',
+        'mode' => 'payment',
+    ],
+    'rebranding' => [ // Website Rebranding, $200/month
+        'price' => $isLive ? 'price_1UUgE4Cq5Nkv0OY1iTtIrUaB' : 'price_1UUfILCxJrrDe7qiDyT0UTE7',
+        'mode' => 'subscription',
+    ],
 ];
 $input = json_decode(file_get_contents('php://input') ?: '', true) ?: [];
 $planKey = $input['plan'] ?? 'makeover';
-if (!isset($plans[$planKey]) || strpos($plans[$planKey]['price'], 'price_...') === 0) {
+if (!isset($plans[$planKey])) {
     http_response_code(400);
     echo json_encode(['error' => 'This plan is not available for online checkout yet.']);
     exit;

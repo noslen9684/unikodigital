@@ -4,17 +4,17 @@ This is the single source of truth for what's left before Stripe payments work o
 
 ## Values to Replace
 
-The Price IDs are filled in. Check that each one is matched to the right product, and swap them for **live** Price IDs when you switch to live keys (test and live prices have different IDs).
+All Price IDs are filled in. The endpoint picks **live** prices when the secret key starts with `sk_live_`, and **test** prices otherwise, so switching keys in `stripe-config.php` is all that's needed.
 
 **Files containing these values:**
 - [api/create-checkout-session.php](api/create-checkout-session.php) (the `$plans` list)
 
-| Plan (`checkout.html?plan=…`) | mode | Price ID | Product |
-|------|------|----------|---------|
-| `makeover` (default) | `payment` | `price_1UUfJ1CxJrrDe7qiUFJIgI0F` | website makeover, $150 one-time |
-| `rebranding` | `subscription` | `price_1UUfILCxJrrDe7qiDyT0UTE7` | Website Rebranding, $200/month |
+| Plan (`checkout.html?plan=…`) | mode | Live Price ID | Test Price ID |
+|------|------|---------------|---------------|
+| `makeover` (default) — $150 one-time | `payment` | `price_1UUgDzCq5Nkv0OY1IWUC2KiI` | `price_1UUfJ1CxJrrDe7qiUFJIgI0F` |
+| `rebranding` — $200/month | `subscription` | `price_1UUgE4Cq5Nkv0OY1iTtIrUaB` | `price_1UUfILCxJrrDe7qiDyT0UTE7` |
 
-If the two IDs are swapped, Stripe rejects the session (a one-time price can't be used in `subscription` mode, and vice versa) and the checkout page shows "Could not start checkout." Swap them in `$plans` to fix it.
+The live account also has a duplicate of each product (`prod_VVggWW5vq23MRN`, `prod_VVgfLJbtIcC0j8`) that the site doesn't use; archive them in the Dashboard to avoid confusion.
 
 ## Configured Parameters
 
