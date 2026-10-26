@@ -1,0 +1,7 @@
+# Always re-check HTML pages so visitors see updates right away.
+# CSS/JS keep long caching; their ?v= version in the HTML changes on each update.
+<IfModule mod_headers.c>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
