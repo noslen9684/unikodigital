@@ -78,7 +78,7 @@ $session = json_decode($body ?: '', true);
 if ($status !== 200 || empty($session['client_secret'])) {
     error_log('Stripe Checkout Session error: ' . ($session['error']['message'] ?? 'no response'));
     http_response_code(502);
-    echo json_encode(['error' => 'Could not start checkout. Please try again or contact us.', 'debug' => $session['error']['message'] ?? 'no response']); // TEMP: remove after setup
+    echo json_encode(['error' => 'Could not start checkout. Please try again or contact us.']);
     exit;
 }
 
