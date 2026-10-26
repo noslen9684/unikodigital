@@ -109,9 +109,9 @@
   document.querySelectorAll("[data-plan]").forEach(function (btn) {
     btn.addEventListener("click", function () {
       var plan = btn.dataset.plan;
-      if (plan === "starter") { typeSelect.value = "New website"; budgetSelect.value = "Under $1,000"; }
-      if (plan === "growth") { typeSelect.value = "New website"; budgetSelect.value = "$1,000 – $3,000"; }
-      if (plan === "pro") { typeSelect.value = "Online store"; budgetSelect.value = "$3,000 – $6,000"; }
+      if (plan === "starter") { typeSelect.value = "New website"; budgetSelect.value = "Under $500"; }
+      if (plan === "growth") { typeSelect.value = "New website"; budgetSelect.value = "$500 – $1,000"; }
+      if (plan === "pro") { typeSelect.value = "Online store"; budgetSelect.value = "$1,000 – $2,000"; }
     });
   });
 
