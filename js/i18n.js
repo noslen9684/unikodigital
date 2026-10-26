@@ -85,6 +85,21 @@ window.UNIKO_ES = {
   "pricing.p3.f5": "90 días de soporte prioritario",
   "pricing.note": "¿Necesitas ayuda continua? Los planes de soporte empiezan en $49/mes.<br />Trabajamos de forma remota con clientes en todo el mundo, en horario del Este de EE. UU.",
 
+  "pricing.payLink": "¿Ya tienes una cotización? Realiza tu pago →",
+  "nav.pay": "Pagar",
+
+  "pay.eyebrow": "Pagos",
+  "pay.title": "Paga de forma segura en línea",
+  "pay.lead": "Paga con cualquier tarjeta de crédito o débito. El pago se procesa de forma segura a través de Stripe.",
+  "pay.p1.t": "Renovación de sitio web",
+  "pay.p1.d": "Renueva tu sitio actual con un diseño moderno y adaptado a móviles.",
+  "pay.p2.t": "Rebranding de sitio web",
+  "pay.p2.d": "Rebranding y actualizaciones de diseño continuas para tu sitio, con cobro mensual. Cancela cuando quieras.",
+  "pay.per": "/mes",
+  "pay.buy": "Comprar ahora",
+  "pay.subscribe": "Suscribirse",
+  "pay.note": "¿Prefieres transferencia bancaria (USD o DOP)? Contáctanos y te enviamos los datos.",
+
   "testi.eyebrow": "Testimonios",
   "testi.title": "Clientes que eligieron ser diferentes",
   "testi.q1": "“Nuestras reservas se duplicaron en los primeros tres meses. El nuevo sitio por fin refleja la experiencia que ofrecemos.”",

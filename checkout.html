@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout — UNIKO Digital</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#04060a" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Stripe.js must load from js.stripe.com (PCI requirement). -->
+  <script src="https://js.stripe.com/dahlia/stripe.js"></script>
+</head>
+<body>
+  <header class="nav is-scrolled">
+    <div class="nav__inner container">
+      <a href="index.html" class="logo" aria-label="UNIKO Digital home">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <defs>
+            <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2EE6D6" />
+              <stop offset="1" stop-color="#1EA7FF" />
+            </linearGradient>
+          </defs>
+          <circle cx="16" cy="16" r="13" fill="none" stroke="url(#lg)" stroke-width="3.5" />
+          <path d="M11.5 10v6.5a4.5 4.5 0 0 0 9 0V10" fill="none" stroke="#FF6B4A" stroke-width="3" stroke-linecap="round" />
+        </svg>
+        <span class="logo__text"><b>UNIKO</b><small>DIGITAL</small></span>
+      </a>
+      <a href="index.html" class="btn btn--ghost btn--sm">Back to site</a>
+    </div>
+  </header>
+
+  <main id="main" class="section checkout">
+    <div class="container container--narrow">
+      <header class="section__head">
+        <p class="eyebrow">Checkout</p>
+        <h1 class="checkout__title" id="checkout-title">Secure checkout</h1>
+        <p class="section__lead" id="checkout-lead">Pay with card or your preferred payment method. Payments are processed securely by Stripe.</p>
+      </header>
+
+      <div class="checkout__card">
+        <div id="checkout-form" aria-labelledby="checkout-title"></div>
+        <p class="checkout__status" id="checkout-status" role="status" aria-live="polite">Loading secure payment form…</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/checkout.js" defer></script>
+</body>
+</html>

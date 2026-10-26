@@ -304,6 +304,7 @@
           </article>
         </div>
         <p class="pricing__note reveal" data-i18n="pricing.note">Need ongoing help? Care plans start at $49/month.<br />We work remotely with clients worldwide, on US Eastern time.</p>
+        <p class="pricing__note pricing__note--link reveal"><a href="#pay" data-i18n="pricing.payLink">Already have a quote? Make a payment →</a></p>
       </div>
     </section>
 
@@ -366,6 +367,35 @@
             <p data-i18n="faq.a5">We set everything up for you. Hosting and domain fees are billed by the provider, usually $10–30/month.</p>
           </details>
         </div>
+      </div>
+    </section>
+
+    <!-- ============ PAYMENTS ============ -->
+    <!-- Buy now buttons open checkout.html, which uses Stripe's embedded payment form. Plans and prices live in api/create-checkout-session.php. -->
+    <section class="section" id="pay" aria-labelledby="pay-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow" data-i18n="pay.eyebrow">Payments</p>
+          <h2 id="pay-title" data-i18n="pay.title">Pay securely online</h2>
+          <p class="section__lead" data-i18n="pay.lead">Pay with any credit or debit card. Checkout is handled securely by Stripe.</p>
+        </header>
+
+        <div class="pay">
+          <article class="card pay__card reveal" style="--i:0">
+            <h3 data-i18n="pay.p1.t">Website Makeover</h3>
+            <p class="pay__desc" data-i18n="pay.p1.d">Refresh your current website with a modern, mobile-friendly design.</p>
+            <p class="plan__price">$150</p>
+            <a href="checkout.html?plan=makeover" class="btn btn--primary btn--block" data-i18n="pay.buy">Buy now</a>
+          </article>
+
+          <article class="card pay__card reveal" style="--i:1">
+            <h3 data-i18n="pay.p2.t">Website Rebranding</h3>
+            <p class="pay__desc" data-i18n="pay.p2.d">Ongoing rebranding and design updates for your website, billed monthly. Cancel anytime.</p>
+            <p class="plan__price">$200<span class="pay__per" data-i18n="pay.per">/month</span></p>
+            <a href="checkout.html?plan=rebranding" class="btn btn--primary btn--block" data-i18n="pay.subscribe">Subscribe</a>
+          </article>
+        </div>
+        <p class="pay__note" data-i18n="pay.note">Prefer a bank transfer (USD or DOP)? Contact us and we'll send the details.</p>
       </div>
     </section>
 
@@ -468,6 +498,7 @@
         <a href="#work" data-i18n="nav.work">Work</a>
         <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
         <a href="#faq">FAQ</a>
+        <a href="#pay" data-i18n="nav.pay">Pay</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
       <p class="footer__copy">© <span id="year">2026</span> UNIKO Digital. <span data-i18n="footer.tagline">Different by design.</span> <span data-i18n="footer.made">Made with care in the Dominican Republic.</span></p>

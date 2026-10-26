@@ -2,3 +2,7 @@
 .claude/
 *.zip
 Screenshot*.png
+
+# Stripe keys must never be committed
+stripe-config.php
+.env
